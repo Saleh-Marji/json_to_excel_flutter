@@ -31,8 +31,14 @@ DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
+; x64compatible was added in Inno Setup 6.3; 6.2.x only accepts x64.
+#if Ver >= EncodeVer(6,3,0)
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
+#else
+ArchitecturesAllowed=x64
+ArchitecturesInstallIn64BitMode=x64
+#endif
 MinVersion=10.0
 OutputDir=output
 OutputBaseFilename=JSON-to-Excel-Setup-{#MyAppVersion}

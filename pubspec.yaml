@@ -1,0 +1,36 @@
+name: json_to_excel
+description: Desktop app that maps JSON fields to an Excel or CSV table.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.7.3
+  get_storage: ^2.1.1
+  file_picker: ^8.3.7
+  excel: ^4.0.6
+  csv: ^6.0.0
+  path: ^1.9.1
+  window_manager: ^0.5.0
+  # Pinned: sm_flutter_base 2.2.9 does not handle DioExceptionType.transformTimeout in dio 5.11+.
+  dio: 5.9.2
+  sm_flutter_base:
+    hosted: https://pub.salehmarji.com
+    version: ^2.2.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  generate: true

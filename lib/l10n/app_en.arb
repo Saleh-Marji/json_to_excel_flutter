@@ -1,0 +1,101 @@
+{
+  "@@locale": "en",
+
+  "app_title": "JSON to Excel",
+
+  "common_ok": "OK",
+  "common_cancel": "Cancel",
+  "common_retry": "Retry",
+  "common_back": "Back",
+  "common_continue": "Continue",
+  "common_error": "Error",
+  "common_remove": "Remove",
+  "common_edit": "Edit",
+  "common_save": "Save",
+
+  "nav_unknownScreen_title": "Page not found",
+  "nav_unknownScreen_body": "This screen does not exist. Return home to pick a JSON file.",
+  "nav_unknownScreen_goHome_button": "Go home",
+
+  "import_homeScreen_title": "JSON to Excel",
+  "import_homeScreen_description": "Select a JSON file. Nested lists are merged into one object so you can pick the leaf fields to export.",
+  "import_homeScreen_selectFile_button": "Select JSON file",
+  "import_homeScreen_loading_message": "Reading JSON file…",
+  "import_homeScreen_selectedFile_label": "Selected: {name}",
+  "@import_homeScreen_selectedFile_label": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+
+  "mapping_mappingScreen_title": "Choose columns",
+  "mapping_mappingScreen_tree_hint": "Expand objects to see nested fields. Tap a leaf field to add it as a column.",
+  "mapping_mappingScreen_breadcrumbRoot": "Root",
+  "mapping_mappingScreen_empty_title": "No fields here",
+  "mapping_mappingScreen_empty_description": "This JSON has no keys to map.",
+  "mapping_mappingScreen_selected_title": "Selected columns",
+  "mapping_mappingScreen_selected_empty": "Select leaf fields to add Excel columns.",
+  "mapping_mappingScreen_continue_button": "Continue",
+  "mapping_mappingScreen_selectValue_button": "Select this value",
+  "mapping_mappingScreen_noMappings_error": "Select at least one field.",
+  "mapping_mappingScreen_duplicateColumn_error": "Column names must be unique.",
+  "mapping_mappingScreen_wasList_badge": "list",
+  "mapping_mappingScreen_reorder_tooltip": "Reorder",
+  "mapping_type_string": "string",
+  "mapping_type_number": "number",
+  "mapping_type_boolean": "boolean",
+  "mapping_type_object": "object",
+  "mapping_type_array": "array",
+  "mapping_mappingScreen_example": "e.g. {value}",
+  "@mapping_mappingScreen_example": {
+    "placeholders": {
+      "value": { "type": "String" }
+    }
+  },
+  "mapping_profile_saved_title": "Saved profiles",
+  "mapping_profile_saveSwitch_label": "Save as profile",
+  "mapping_profile_nameField_label": "Profile name",
+  "mapping_profile_nameField_hint": "Must be unique",
+  "mapping_profile_nameField_requiredError": "Enter a profile name.",
+  "mapping_profile_duplicateName_error": "A profile with this name already exists.",
+
+  "mapping_columnDialog_title": "Column name",
+  "mapping_columnDialog_label": "Excel column name",
+  "mapping_columnDialog_hint": "Name shown in the first row",
+  "mapping_columnDialog_requiredError": "Enter a column name.",
+
+  "export_exportScreen_title": "Export",
+  "export_exportScreen_format_label": "Output format",
+  "export_exportScreen_formatXlsx_label": "Excel (.xlsx)",
+  "export_exportScreen_formatCsv_label": "CSV (.csv)",
+  "export_exportScreen_destination_label": "Destination",
+  "export_exportScreen_destinationEmpty_hint": "No file selected yet",
+  "export_exportScreen_chooseDestination_button": "Choose destination",
+  "export_exportScreen_start_button": "Start export",
+  "export_exportScreen_progressExploding": "Building rows ({current} of {total})",
+  "@export_exportScreen_progressExploding": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "export_exportScreen_progressWriting": "Writing file ({current} of {total})",
+  "@export_exportScreen_progressWriting": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "export_exportScreen_done_title": "Export finished",
+  "export_exportScreen_done_message": "Saved to {path}",
+  "@export_exportScreen_done_message": {
+    "placeholders": {
+      "path": { "type": "String" }
+    }
+  },
+  "export_exportScreen_openFolder_button": "Open folder",
+  "export_exportScreen_startOver_button": "Start over",
+  "export_exportScreen_needDestination_error": "Choose a destination file first.",
+  "export_exportScreen_needMappings_error": "Go back and select at least one column.",
+  "export_exportScreen_needJson_error": "No JSON file is loaded. Start from the home screen."
+}
